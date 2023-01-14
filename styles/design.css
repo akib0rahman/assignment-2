@@ -6,6 +6,7 @@
 ----------------------------------------- */
 :root{
     --primary-color:#FF900E;
+    --secondary-color: #727272;
 }
 .primary-btn{
     width: 180px;
@@ -51,7 +52,7 @@ header{
     width: 750px;
     height: 52px;
     font-weight: 400px;
-    font-size: 16px;
+    font-size: 17px;
     text-align: center;
     margin-bottom: 40px;
     color: #727272;
@@ -162,13 +163,12 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
-.facts-title{
+.title{
     font-weight: 700;
     font-size: 45px;
 }
-.facts-paragraph{
-    font-size: 16px;
-    text-align: justify;
+.paragraph{
+    font-size: 18px;
     margin-top: 15px;
     margin-bottom: 60px;
     color: #727272;
@@ -183,5 +183,84 @@ header{
     justify-content: center;
     align-items: center;
     padding: 15px;
+    
 }
 
+.info-box:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s linear;
+}
+.info-box:hover .inside-box{
+    transform: scale(1.8) ;
+    transition: transform 0.3s linear 0.33s;
+}
+.info-box:hover .paragraph{
+    transform: scale(1.48) ;
+    transition: transform 0.5s linear 0.8s;
+}
+.inside-box{
+    font-size: 28px;
+    margin-top: 8px;
+}
+/*----------------sponsor----------------
+----------------------------------------- */
+.sponsors{
+    margin: 100px 150px;
+}
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.company{
+    display: flex;
+    justify-content: space-around;
+}
+/*-------------- footer --------------------- 
+--------------------------------------------*/
+
+.footer{
+    padding: 50px 150px;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact > div{
+    flex: 1;
+}
+.contact .section-title{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.contact .paragraph{
+    margin-bottom: 15px;
+}
+.contact ul{
+    color:var(--secondary-color);
+}
+.contact input[type="text"],input[type="email"],textarea{
+    margin-bottom: 10px;
+    border:0;
+    width: 60%;
+    padding: 3px 20px;
+    border-radius: 12px;
+}
+input{
+    height: 30px;
+}
+.contact .primary-btn{
+    width: 70%;
+    height: 40px;
+}
+/*-----------------copy-right-------------- */
+.copy-right{
+    margin-top: 50px;
+}
+.copy-right .paragraph{
+    border-top: 1px solid rgba(158, 154, 154, 0.4);
+    text-align: center;
+    margin: 10px 300px;
+}
