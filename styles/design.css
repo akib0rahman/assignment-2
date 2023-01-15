@@ -1,14 +1,16 @@
-*{
+* {
     margin: 0px;
     font-size: 18px;
 }
+
 /*--------------common styles-------------
 ----------------------------------------- */
-:root{
-    --primary-color:#FF900E;
+:root {
+    --primary-color: #FF900E;
     --secondary-color: #727272;
 }
-.primary-btn{
+
+.primary-btn {
     width: 180px;
     height: 64px;
     font-weight: 600;
@@ -21,34 +23,41 @@
 
 /*-----------navigation and banner----------
 ------------------------------------------ */
-header{
+header {
     background-color: rgba(255, 144, 14, 0.1);
     max-height: 1320px;
     padding: 50px 200px 45px 200px;
 }
-.navigation, .nav-bar ul{
+
+.navigation,
+.nav-bar ul {
     display: flex;
     justify-content: space-between;
     gap: 40px;
     align-items: center;
 }
-.nav-bar ul{
+
+.nav-bar ul {
     list-style-type: none;
 }
-.nav-title{
+
+.nav-title {
     font-weight: 700;
     font-size: 45px;
 }
-.banner{
+
+.banner {
     margin-top: 100px;
 }
-.banner-title{
+
+.banner-title {
     font-weight: 700;
     font-size: 64px;
     text-align: center;
     margin-bottom: 28px;
 }
-.banner-description{
+
+.banner-description {
     width: 750px;
     height: 52px;
     font-weight: 400px;
@@ -58,36 +67,42 @@ header{
     color: #727272;
     margin: auto;
 }
-.banner-btn{
+
+.banner-btn {
     margin-left: 430px;
     margin-bottom: 50px;
- }
-.banner img{
+}
+
+.banner img {
     width: 100%;
 }
 
 /*-------------features1 list------------
 --------------------------------------- */
-.feature1{
+.feature1 {
     display: flex;
     gap: 70px;
     margin-top: 85px;
     padding-left: 240px;
     padding-right: 240px;
 }
-.thumbnails{
+
+.thumbnails {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 24px;
     column-gap: 24px;
 }
-.thumbnails img{
+
+.thumbnails img {
     width: 100%;
 }
-.feature-description{
+
+.feature-description {
     width: 530px;
 }
-.feature-description{
+
+.feature-description {
     width: 530px;
     font-weight: 400px;
     display: flex;
@@ -95,18 +110,21 @@ header{
     align-items: center;
     justify-content: center;
 }
-.feature-title{
+
+.feature-title {
     font-weight: 500px;
     font-size: 45px;
 }
-.details{
+
+.details {
     font-size: 16px;
     text-align: justify;
     margin-top: 25px;
     margin-bottom: 40px;
     color: #727272;
 }
-.color{
+
+.color {
     font-weight: 500px;
     font-size: 45px;
     color: var(--primary-color);
@@ -114,66 +132,76 @@ header{
 
 /*------------feature2-----------------
 ---------------------------------------*/
-.feature2{
+.feature2 {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
     margin-top: 100px;
     margin: 100px 200px;
 }
-.feature2-main-title{
+
+.feature2-main-title {
     padding-left: 20px;
     font-weight: 700;
     font-size: 45px;
     border-left: 5px solid var(--primary-color);
 }
-.feature2-details{
+
+.feature2-details {
     font-size: 16px;
     text-align: justify;
     margin-top: 15px;
     margin-bottom: 30px;
     color: #727272;
 }
-.feature2-div{
+
+.feature2-div {
     border: none;
-    box-shadow:  3px 3px 3px 3px rgb(243, 240, 240);
+    box-shadow: 3px 3px 3px 3px rgb(243, 240, 240);
     border-radius: 5px;
     margin-bottom: 18px;
     padding: 20px 20px 5px 20px;
 }
-.feature2-thumbnail img{
+
+.feature2-thumbnail img {
     width: 100%;
     padding-left: 70px;
 }
-.feature2-btn{
+
+.feature2-btn {
     width: 250px;
     height: 150px;
     margin-top: -70px;
 }
-.feature2-btn-font{
+
+.feature2-btn-font {
     font-size: 60px;
 }
 
 /*--------------some-facts--------------------
 --------------------------------------------- */
-.some-facts{
+.some-facts {
     margin: 100px 200px;
 }
-.information{
+
+.information {
     display: flex;
     justify-content: space-evenly;
 }
-.title{
+
+.title {
     font-weight: 700;
     font-size: 45px;
 }
-.paragraph{
+
+.paragraph {
     font-size: 18px;
     margin-top: 15px;
     margin-bottom: 60px;
     color: #727272;
 }
-.info-box{
+
+.info-box {
     width: 180px;
     height: 180px;
     border: 2px solid var(--primary-color);
@@ -183,84 +211,288 @@ header{
     justify-content: center;
     align-items: center;
     padding: 15px;
-    
+
 }
 
-.info-box:hover{
+.info-box:hover {
     transform: scale(1.2);
     transition: transform 0.3s linear;
 }
-.info-box:hover .inside-box{
-    transform: scale(1.8) ;
+
+.info-box:hover .inside-box {
+    transform: scale(1.8);
     transition: transform 0.3s linear 0.33s;
 }
-.info-box:hover .paragraph{
-    transform: scale(1.48) ;
+
+.info-box:hover .paragraph {
+    transform: scale(1.48);
     transition: transform 0.5s linear 0.8s;
 }
-.inside-box{
+
+.inside-box {
     font-size: 28px;
     margin-top: 8px;
 }
-/*----------------sponsor----------------
------------------------------------------ */
-.sponsors{
+
+/*----------------sponsor-----------------------
+------------------------------------------------ */
+.sponsors {
     margin: 100px 150px;
 }
-.sponsor{
+
+.sponsor {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
 }
-.company{
+
+.company {
     display: flex;
     justify-content: space-around;
 }
-/*-------------- footer --------------------- 
---------------------------------------------*/
 
-.footer{
+/*-------------------- footer --------------------- 
+--------------------------------------------------*/
+
+.footer {
     padding: 50px 150px;
     background-color: rgba(255, 144, 14, 0.1);
 }
-.contact{
+
+.contact {
     display: flex;
     justify-content: space-between;
 }
-.contact > div{
+
+.contact>div {
     flex: 1;
 }
-.contact .section-title{
+
+.contact .section-title {
     font-size: 28px;
     margin-bottom: 15px;
 }
-.contact .paragraph{
+
+.contact .paragraph {
     margin-bottom: 15px;
 }
-.contact ul{
-    color:var(--secondary-color);
+
+.contact ul {
+    color: var(--secondary-color);
 }
-.contact input[type="text"],input[type="email"],textarea{
+
+.contact input[type="text"],
+input[type="email"],
+textarea {
     margin-bottom: 10px;
-    border:0;
+    border: 0;
     width: 60%;
     padding: 3px 20px;
     border-radius: 12px;
 }
-input{
+
+input {
     height: 30px;
 }
-.contact .primary-btn{
+
+.contact .primary-btn {
     width: 70%;
     height: 40px;
 }
+
 /*-----------------copy-right-------------- */
-.copy-right{
+.copy-right {
     margin-top: 50px;
 }
-.copy-right .paragraph{
+
+.copy-right .paragraph {
     border-top: 1px solid rgba(158, 154, 154, 0.4);
     text-align: center;
     margin: 10px 300px;
+}
+
+
+
+/*-------------------------------------------------------
+--------------------responsive mobile device-------------
+---------------------------------------------------------*/
+@media only screen and (max-width:576px) {
+    .nav-bar {
+        display: none;
+    }
+    /* footer{
+        display: none;
+    } */
+    .primary-btn {
+        width: 120px;
+        height: 54px;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    header {
+        padding: 15px 20px;
+    }
+    .nav-title {
+        font-size: 25px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .banner {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-title {
+        font-weight: 700;
+        font-size: 38px;
+    }
+    .banner-description {
+        width: 100%;
+        height: 125px;
+        text-align: justify;
+        font-weight: 400px;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .banner-btn {
+        margin-left: 35%;
+        margin-bottom: 25px;
+    }
+    .banner-description img {
+        width: 100%;
+    }
+    /*------------------features1 list---------------------*/
+    .feature1 {
+        width: 100%;
+        flex-direction: column-reverse;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .feature-description {
+        width: 100%;
+        font-weight: 400px;
+    }
+    .feature-title {
+        font-weight: 500px;
+        font-size: 35px;
+        text-align: center;
+    }
+    .color {
+        font-weight: 500px;
+        font-size: 35px;
+    }
+    .details {
+        width: 85%;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .thumbnails {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .thumbnails .thumbnail img {
+        width: 100%;
+        /* height: 240px; */
+    }
+
+    /*------------feature2-----------------
+    ---------------------------------------*/
+    .feature2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 100px;
+        margin: 0px 0px;
+        padding: 15px;
+    }
+    .feature2-thumbnail img {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .feature2-btn {
+        display: none;
+    }
+    /*--------------some-facts--------------------*/
+    .some-facts {
+        margin: 0px 0px;
+        width: 100%;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+    }
+    .paragraph {
+        width: 100%;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .info-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*----------------sponsor----------------------- */
+    .sponsors {
+        /* margin-top: 50px; */
+        width: 100%;
+        margin: 0px 0px;
+    }
+    .sponsor {
+        margin-top: 60px;
+        width: 100%;
+        align-items: center;
+    }
+    .company {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+    .company img {
+        width: 40%;
+    }
+    /*-------------------- footer ---------------------*/
+    .footer{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 40px;
+    }
+    .contact{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 50px;
+    }
+    .contact .social-media{
+        display: none;
+    }
+    .contact-information{
+        display: none;
+    }
+    .copy-right{
+        display: none;
+    }
+    .customer-service{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 70px;
+    }
+    
 }
